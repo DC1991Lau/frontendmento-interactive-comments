@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-very-light-gray h-screen w-screen;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem Rubik, sans-serif;
+}
