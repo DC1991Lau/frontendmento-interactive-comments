@@ -2,22 +2,15 @@ import { Comment } from "./components/Comment";
 import { Container } from "./components/Container";
 import "./styles/global.css";
 
-import data from "../data.json";
+import AppContext from "./context";
+import { useContext } from "react";
+import { CommentsContext } from "./context/CommentsContext";
 
 function App() {
   return (
-    <Container>
-      {data.comments.map((comment) => (
-        <Comment
-          content={comment.content}
-          createdAt={comment.createdAt}
-          id={comment.id}
-          score={comment.score}
-          user={comment.user}
-          replies={comment.replies}
-        />
-      ))}
-    </Container>
+    <AppContext>
+      <Container />
+    </AppContext>
   );
 }
 

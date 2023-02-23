@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply bg-very-light-gray h-screen w-screen;
+  @apply bg-very-light-gray h-screen;
 }
 
 body,
